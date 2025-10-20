@@ -1,0 +1,220 @@
+/* VehicleDetailPage Styles */
+
+/* Main page container */
+.vehicle-detail-page {
+  padding: 2rem 1rem;
+  max-width: 900px; /* Narrower max-width for detail page */
+  margin: 0 auto;
+  min-height: calc(100vh - 200px); /* Ensure page fills viewport */
+}
+
+/* Detail container */
+.detail-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+/* Back button */
+.back-btn {
+  background-color: #667eea;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Back button hover effect */
+.back-btn:hover {
+  background-color: #5568d3;
+  transform: translateX(-3px);
+}
+
+/* Vehicle header section */
+.vehicle-header {
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* VRM heading */
+.vehicle-header h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+/* Vehicle title (Make Model Variant) */
+.vehicle-title {
+  color: #666;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+/* Vehicle information card */
+.vehicle-info-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+/* Price section - prominently displayed */
+.price-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Price label */
+.price-label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Price value */
+.price-value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Details grid - displays attributes in a grid layout */
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 1.5rem;
+}
+
+/* Individual detail item */
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+/* Detail label (e.g., "Make:", "Model:") */
+.detail-label {
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Detail value (e.g., "Ford", "Focus") */
+.detail-value {
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Error container */
+.error-container {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Error heading */
+.error-container h2 {
+  color: #c33;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+/* Error message */
+.error-container p {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Loading container */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  color: #666;
+}
+
+/* Spinner animation */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+/* Keyframe animation for spinner */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+  .vehicle-header h1 {
+    font-size: 2rem;
+  }
+
+  .vehicle-title {
+    font-size: 1.1rem;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr; /* Single column on tablets */
+  }
+
+  .price-section {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
+
+/* Responsive design for mobile phones */
+@media (max-width: 480px) {
+  .vehicle-detail-page {
+    padding: 1rem 0.5rem;
+  }
+
+  .detail-container {
+    padding: 1.5rem;
+  }
+
+  .vehicle-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .vehicle-title {
+    font-size: 1rem;
+  }
+
+  .price-value {
+    font-size: 1.5rem;
+  }
+
+  .vehicle-info-card {
+    padding: 1.5rem;
+  }
+}

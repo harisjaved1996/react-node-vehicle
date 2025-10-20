@@ -1,0 +1,144 @@
+/* HomePage Styles */
+
+/* Main container for home page */
+.home-page {
+  padding: 2rem 1rem;
+  max-width: 1400px; /* Limit maximum width for large screens */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Content container */
+.home-container {
+  width: 100%;
+}
+
+/* Search section styles */
+.search-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Search section heading */
+.search-section h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+/* Search description text */
+.search-description {
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* View All Vehicles button */
+.view-all-btn {
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* View All button hover effect */
+.view-all-btn:hover:not(:disabled) {
+  background-color: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Disabled button state */
+.view-all-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Error message container */
+.error-message {
+  background-color: #fee;
+  border: 1px solid #fcc;
+  color: #c33;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* No results message container */
+.no-results-message {
+  background-color: #e3f2fd;
+  border: 1px solid #90caf9;
+  color: #1976d2;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Loading container */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  color: #666;
+}
+
+/* Spinner animation */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+/* Keyframe animation for spinner */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+  .home-page {
+    padding: 1rem 0.5rem;
+  }
+
+  .search-section {
+    padding: 1.5rem;
+  }
+
+  .search-section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Responsive design for mobile phones */
+@media (max-width: 480px) {
+  .search-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .search-description {
+    font-size: 0.85rem;
+  }
+
+  .view-all-btn {
+    width: 100%; /* Full width button on mobile */
+    padding: 0.7rem;
+  }
+}

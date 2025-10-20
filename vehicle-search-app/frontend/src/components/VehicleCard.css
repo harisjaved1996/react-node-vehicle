@@ -1,0 +1,37 @@
+/* VehicleCard Component Styles */
+
+/* Card container */
+.vehicle-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  cursor: pointer; /* Show pointer cursor to indicate clickability */
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Card hover effect */
+.vehicle-card:hover {
+  transform: translateY(-5px); /* Lift card up slightly */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+/* Card header */
+.card-header {
+  display: flex;
+  justify-content: flex-end; /* Align VRM badge to the right */
+}
+
+/* VRM badge */
+.vrm-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}

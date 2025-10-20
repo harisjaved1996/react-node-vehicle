@@ -1,0 +1,112 @@
+[
+    {
+        "VRM": "AB12CDE",
+        "Make": "Volkswagen",
+        "Model": "Golf",
+        "Variant": "1.5 TSI EVO",
+        "Colour": "Blue",
+        "BodyType": "Hatchback",
+        "Mileage": 45200,
+        "Price": 12995,
+        "DateOfRegistration": "2018-03-14"
+    },
+    {
+        "VRM": "XY34ZTR",
+        "Make": "BMW",
+        "Model": "3 Series",
+        "Variant": "320d M Sport",
+        "Colour": "White",
+        "BodyType": "Saloon",
+        "Mileage": 37600,
+        "Price": 17995,
+        "DateOfRegistration": "2019-07-22"
+    },
+    {
+        "VRM": "JK56LMN",
+        "Make": "Ford",
+        "Model": "Focus",
+        "Variant": "1.0 EcoBoost Zetec",
+        "Colour": "Red",
+        "BodyType": "Hatchback",
+        "Mileage": 29800,
+        "Price": 10450,
+        "DateOfRegistration": "2020-05-03"
+    },
+    {
+        "VRM": "GH78OPQ",
+        "Make": "Mercedes-Benz",
+        "Model": "C-Class",
+        "Variant": "C200 AMG Line",
+        "Colour": "Silver",
+        "BodyType": "Coupe",
+        "Mileage": 22500,
+        "Price": 23950,
+        "DateOfRegistration": "2021-01-11"
+    },
+    {
+        "VRM": "UV90RST",
+        "Make": "Audi",
+        "Model": "A4",
+        "Variant": "2.0 TDI Ultra",
+        "Colour": "Black",
+        "BodyType": "Estate",
+        "Mileage": 51200,
+        "Price": 15200,
+        "DateOfRegistration": "2017-09-30"
+    },
+    {
+        "VRM": "PL21XYZ",
+        "Make": "Tesla",
+        "Model": "Model 3",
+        "Variant": "Long Range AWD",
+        "Colour": "Grey",
+        "BodyType": "Saloon",
+        "Mileage": 18200,
+        "Price": 32995,
+        "DateOfRegistration": "2021-06-18"
+    },
+    {
+        "VRM": "MN65JKL",
+        "Make": "Toyota",
+        "Model": "Corolla",
+        "Variant": "1.8 Hybrid Icon",
+        "Colour": "Blue",
+        "BodyType": "Hatchback",
+        "Mileage": 34100,
+        "Price": 16495,
+        "DateOfRegistration": "2019-02-12"
+    },
+    {
+        "VRM": "CD32EFG",
+        "Make": "Honda",
+        "Model": "Civic",
+        "Variant": "1.5 VTEC Turbo Sport",
+        "Colour": "Black",
+        "BodyType": "Hatchback",
+        "Mileage": 28900,
+        "Price": 15450,
+        "DateOfRegistration": "2020-08-07"
+    },
+    {
+        "VRM": "RS87TUV",
+        "Make": "Volvo",
+        "Model": "XC40",
+        "Variant": "T3 Momentum",
+        "Colour": "White",
+        "BodyType": "SUV",
+        "Mileage": 26700,
+        "Price": 23995,
+        "DateOfRegistration": "2021-03-29"
+    },
+    {
+        "VRM": "WX11YZA",
+        "Make": "Nissan",
+        "Model": "Qashqai",
+        "Variant": "1.3 DIG-T Acenta Premium",
+        "Colour": "Silver",
+        "BodyType": "SUV",
+        "Mileage": 38800,
+        "Price": 14250,
+        "DateOfRegistration": "2018-11-05"
+    }
+]

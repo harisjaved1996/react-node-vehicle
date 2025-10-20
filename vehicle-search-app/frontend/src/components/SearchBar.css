@@ -1,0 +1,124 @@
+/* SearchBar Component Styles */
+
+/* Form container */
+.search-bar {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Container for input and button */
+.search-input-container {
+  display: flex;
+  gap: 1rem; /* Space between input and button */
+  align-items: stretch; /* Make button same height as input */
+}
+
+/* Search input field */
+.search-input {
+  flex: 1; /* Take up remaining space */
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Input focus state */
+.search-input:focus {
+  border-color: #667eea; /* Purple border on focus */
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1); /* Subtle glow effect */
+}
+
+/* Disabled input state */
+.search-input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Placeholder text styling */
+.search-input::placeholder {
+  color: #999;
+}
+
+/* Search button */
+.search-button {
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* Prevent text wrapping */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Button hover effect */
+.search-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* Disabled button state */
+.search-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Spinner animation inside button */
+.button-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ffffff;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: buttonSpin 0.8s linear infinite;
+  display: inline-block;
+}
+
+/* Keyframe animation for button spinner */
+@keyframes buttonSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+  .search-input {
+    padding: 0.9rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .search-button {
+    padding: 0.9rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Responsive design for mobile phones */
+@media (max-width: 480px) {
+  .search-input-container {
+    flex-direction: column; /* Stack input and button vertically */
+  }
+
+  .search-input,
+  .search-button {
+    width: 100%; /* Full width on mobile */
+  }
+
+  .search-input {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .search-button {
+    padding: 0.8rem;
+    justify-content: center; /* Center button content */
+  }
+}

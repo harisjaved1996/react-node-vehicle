@@ -1,0 +1,50 @@
+/* VehicleGrid Component Styles */
+
+/* Section container */
+.vehicle-grid-section {
+  width: 100%;
+}
+
+/* Grid heading */
+.grid-heading {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Grid container using CSS Grid layout */
+.vehicle-grid {
+  display: grid;
+  /* Create responsive columns that are at least 300px wide */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem; /* Space between cards */
+  padding: 0;
+}
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+  .vehicle-grid {
+    /* Smaller minimum column width on tablets */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .grid-heading {
+    font-size: 1.3rem;
+  }
+}
+
+/* Responsive design for mobile phones */
+@media (max-width: 480px) {
+  .vehicle-grid {
+    /* Single column on mobile */
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .grid-heading {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+}
